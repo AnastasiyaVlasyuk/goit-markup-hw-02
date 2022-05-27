@@ -2,18 +2,20 @@
     --accent-color: #2196F3;
     --primare-text-color: #757575;
     --title-text-color: #212121;
+    --light-text-color: #ffffff;
     --background-color-first: #ffffff;
     --background-color-second: #F5F4FA;
-
+    --backgrout-color-dark: #2F303A;
+    --stroke-color: #EEEEEE;
+    --stroke-header: #ECECEC;
 }
  
 body {
     background-color: var(--background-color-first);
     color: var(--title-text-color);
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.03em;
-    text-align: left;
 }
 
 .list {
@@ -21,7 +23,7 @@ body {
 }
 
 .link.nav {
-    color: #757575;
+    color: var(--primare-text-color);
 }
 /*logo*/
 .link.logo {
@@ -34,20 +36,20 @@ body {
 }
 
 .logo-dark {
-    color: #212121;
+    color: #000;
 }
 
 .logo-light {
-    color: #ffffff;
+    color: var(--light-text-color);
 }
 
 /*hero*/
 .hero {
-    background-color: #2F303A;
+    background-color: var(--backgrout-color-dark);
 }
 
 .hero-title {
-    color: #ffffff;
+    color: var(--light-text-color);
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -58,7 +60,7 @@ body {
 
 .hero-btn {
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--light-text-color);
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
@@ -69,15 +71,14 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #F5F4FA;
-    color: #212121;
+    background-color: #188CE8;
 }
 
 
 /*button*/
 .btn {
     background-color: #F5F4FA;
-    color: #212121;
+    color: var(--title-text-color);
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -89,19 +90,18 @@ body {
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--light-text-color);
 }
 
 .btn.active {
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--light-text-color);
 }
 
 /*link*/
 .link {
     color: var(--title-text-color);
     text-decoration: none;
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -117,8 +117,7 @@ body {
 }
 
 .hero-btn, 
-.btn,
-.link {
+.btn {
     cursor: pointer;
 }
 
@@ -142,7 +141,6 @@ body {
 
 /*peculiarities*/
 .peculiarities .title {
-    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -164,7 +162,7 @@ body {
 /*team*/
 .team {
     background-color: var(--background-color-second);
-    font-weight: 500;
+    font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
@@ -179,15 +177,19 @@ body {
 
 /*footer*/
 .footer {
-    background-color: #2F303A;
+    background-color: var(--backgrout-color-dark);
 }
 
-.footer-text {
-    color: #ffffff;
+.footer-map,
+.footer {
+    color: var(--light-text-color);
     font-style: normal;
-    font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /*portfolio*/
@@ -200,6 +202,7 @@ body {
 
 .portfolio .text {
     font-family: Roboto;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.88;
 }
